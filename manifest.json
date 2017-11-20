@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "WebAccelerator",
+    "description": "A chrome extension which can improve web experience.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "images/icon144.png"
+        //"default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "images/icon18.png",
+        "48": "images/icon48.png",
+        "128": "images/icon144.png"
+    },
+    "background": {
+        "scripts": [
+            "cdns.js",
+            "url-resolver.js",
+            "statistics.js",
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "contextMenus",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
